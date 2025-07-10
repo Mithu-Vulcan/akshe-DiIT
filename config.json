@@ -2,6 +2,8 @@
 	"siteName": "WhimsyWardrobe",
 	"navItems": [
 		{ "label": "About", "link": "index.html#about" },
+		{ "label": "On Offer", "link": "index.html#offer" },
+		{ "label": "New Arrivals", "link": "index.html#new" },
 		{ "label": "Men", "link": "men.html" },
 		{ "label": "Women", "link": "women.html" },
 		{ "label": "Kids", "link": "kids.html" },
