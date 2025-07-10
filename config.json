@@ -1,0 +1,10 @@
+{
+	"siteName": "WhimsyWardrobe",
+	"navItems": [
+		{ "label": "About", "link": "index.html#about" },
+		{ "label": "Men", "link": "men.html" },
+		{ "label": "Women", "link": "women.html" },
+		{ "label": "Kids", "link": "kids.html" },
+		{ "label": "Contact Us", "link": "#footer" }
+	]
+}
