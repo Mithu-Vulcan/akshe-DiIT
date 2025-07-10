@@ -1,23 +1,19 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Rochester&display=swap");
 
 :root {
-	/* Backgrounds */
-	--bg-body: hsl(338, 74%, 90%); /* Main page background (light candy pink) */
-	--bg-navbar: hsl(338, 50%, 70%); /* Top navbar */
-	--bg-footer: var(--bg-navbar); /* Footer background */
-	--bg-section: hsl(338, 77%, 22%); /* Section background (cards) */
-	--bg-button: hsl(338, 50%, 43%); /* Primary button background */
-	--bg-button-hover: hsl(336, 84%, 12%); /* Button hover effect */
-	--bg-accent: hsl(336, 84%, 12%); /* Decorative accents, badges, etc. */
+	--bg-body: hsl(20, 100%, 97%); /* Lightest background */
+	--bg-section: hsl(17, 84%, 87%); /* Soft peachy section/card background */
+	--bg-accent: hsl(351, 52%, 80%); /* Accent (e.g., hover, highlights) */
+	--bg-navbar: hsl(320, 26%, 75%); /* Navbar / footer background */
+
+	/* Buttons */
+	--bg-button: hsl(351, 52%, 80%);
+	--bg-button-hover: hsl(320, 26%, 69%);
 
 	/* Text */
-	--text-primary: hsl(336, 84%, 12%); /* Main text (deep maroon) */
-	--text-secondary: hsla(336, 84%, 12%, 0.7); /* Lighter version */
-	--text-nav-hover: hsl(336, 84%, 22%); /* Slightly brighter for nav hover */
-	--text-light: hsl(338, 74%, 95%); /* very soft pink-white */
-	--text-light-secondary: hsla(338, 74%, 95%, 0.7);
-	--text-clean: hsl(0, 0%, 98%); /* near-white */
-	--text-muted-dark: hsl(0, 0%, 30%); /* deep gray for long paragraphs */
+	--text-primary: hsl(320, 26%, 25%);
+	--text-secondary: hsla(320, 26%, 25%, 0.7);
+	--text-light: hsl(20, 100%, 97%);
 
 	/* Fonts */
 	--font-logo: "Rochester";
@@ -62,6 +58,7 @@ a {
 .header-section ul li {
 	list-style-type: none;
 	transition: all 0.3s ease;
+    font-weight: 500;
 }
 
 .header-section ul li:hover {
