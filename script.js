@@ -165,3 +165,74 @@ class normalItemList extends HTMLElement {
 }
 
 customElements.define("normal-item-section", normalItemList);
+
+class discountedItemList extends HTMLElement {
+	connectedCallback() {
+		if (window.siteConfig) {
+			this.render();
+		} else {
+			document.addEventListener("configLoaded", () => this.render(), {
+				once: true,
+			});
+		}
+	}
+
+	render() {
+		console.log("Loading the item list for: Discounted items");
+		const config = window.siteConfig;
+		if (!config) return;
+
+		const heading = config.headings["offer"];
+		const discount = config.discount;
+
+		let itemsHtml = "";
+
+		function addToList(cat) {
+			config.items[cat].forEach((item) => {
+				if (item.discount) {
+					itemsHtml += `
+						<div class="item">
+							<img
+								src="${item.image}"
+								alt="${item.description}"
+							/>
+							<p class="item-name">${item.description}</p>
+							<p class="item-price"><span class="discount">Rs. ${item.price}.00</span> Rs. ${
+						(item.price * (100 - discount)) / 100
+					}.00 <span class="disc-per">&nbsp;&nbsp;&nbsp;&nbsp; Save ${discount}%</span></p>
+							<p class="availability ${item.availability ? "" : "out"}">${
+						item.availability ? "In Stock" : "Out of Stock"
+					}</p>
+							<button>Make it mine</button>
+						</div>
+					`;
+				}
+			});
+		}
+
+		Object.keys(config.items).forEach((cat) => {
+			if (cat != "new") {
+				addToList(cat);
+			}
+		});
+
+		const containerHtml = `
+			<section class="offer" id="offer">
+				<p class="section-head">${heading}</p>
+				<div class="items">
+					${itemsHtml}
+				</div>
+			</section>
+		`;
+
+		let temp = document.createElement("div");
+		temp.innerHTML = containerHtml;
+		const parent = this.parentNode;
+		while (temp.firstChild) {
+			parent.insertBefore(temp.firstChild, this);
+		}
+		parent.removeChild(this);
+	}
+}
+
+customElements.define("discount-item-section", discountedItemList);
