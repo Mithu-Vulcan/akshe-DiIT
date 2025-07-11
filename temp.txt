@@ -1,0 +1,25 @@
+<section class="new" id="new">
+			<p class="section-head">New-Arrivals</p>
+			<div class="items">
+				<div class="item">
+					<img
+						src="assets/women/FloralPrintedLongSleeveDress.webp"
+						alt="Floral Printed Dress"
+					/>
+					<p class="item-name">Floral Dress – Feminine elegance with comfort</p>
+					<p class="item-price">Rs. 4800.00</p>
+					<p class="availability out">In Stock</p>
+					<button>Make it mine</button>
+				</div>
+				<div class="item">
+					<img
+						src="assets/women/FloralPrintedLongSleeveDress.webp"
+						alt="Floral Printed Dress"
+					/>
+					<p class="item-name">Floral Dress – Feminine elegance with comfort</p>
+					<p class="item-price"> Rs. 4800.00 <span class="discount">Rs. 4800.00</span><span class="disc-per"> &nbsp;&nbsp;&nbsp;&nbsp; Save 30%</span></p>
+					<p class="availability">Out of Stock</p>
+					<button>Make it mine</button>
+				</div>
+			</div>
+		</section>

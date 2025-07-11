@@ -107,3 +107,61 @@ class footerSection extends HTMLElement {
 }
 
 customElements.define("footer-section", footerSection);
+
+class normalItemList extends HTMLElement {
+	connectedCallback() {
+		this.type = this.getAttribute("type");
+		if (window.siteConfig) {
+			this.render();
+		} else {
+			document.addEventListener("configLoaded", () => this.render(), {
+				once: true,
+			});
+		}
+	}
+
+	render() {
+		console.log("Loading the item list for: ", this.type);
+		const config = window.siteConfig;
+		if (!config) return;
+
+		const heading = config.headings[this.type];
+
+		let itemsHtml = "";
+		config.items[this.type].forEach((item) => {
+			itemsHtml += `
+				<div class="item">
+					<img
+						src="${item.image}"
+						alt="${item.description}"
+					/>
+					<p class="item-name">${item.description}</p>
+					<p class="item-price">Rs. ${item.price}.00</p>
+					<p class="availability ${item.availability ? "" : "out"}">${
+				item.availability ? "In Stock" : "Out of Stock"
+			}</p>
+					<button>Make it mine</button>
+				</div>
+			`;
+		});
+
+		const containerHtml = `
+			<section class="${this.type}" id="${this.type}">
+				<p class="section-head">${heading}</p>
+				<div class="items">
+					${itemsHtml}
+				</div>
+			</section>
+		`;
+
+		let temp = document.createElement("div");
+		temp.innerHTML = containerHtml;
+		const parent = this.parentNode;
+		while (temp.firstChild) {
+			parent.insertBefore(temp.firstChild, this);
+		}
+		parent.removeChild(this);
+	}
+}
+
+customElements.define("normal-item-section", normalItemList);

@@ -4,7 +4,7 @@
 	"email": "akshecroos110@gmail.com",
 	"address": "17/12 11th croos road, iruthayapuram west, Batticaloa",
 	"navItems": [
-		{ "label": "About", "link": "#about" },
+		{ "label": "About", "link": "#footer" },
 		{ "label": "On Offer", "link": "index.html#offer" },
 		{ "label": "New Arrivals", "link": "index.html#new" },
 		{ "label": "Men", "link": "men.html", "target": "_blank" },
@@ -12,10 +12,212 @@
 		{ "label": "Kids", "link": "kids.html", "target": "_blank" },
 		{ "label": "Contact Us", "link": "#footer" }
 	],
-	"header": [
-		{"bg": "assets/hero-bg-cropped.webp"}
-	],
-	"footer": [
-		{"bg": "assets/footer-bg-cropped.webp"}
-	]
+	"footer": [{ "bg": "assets/footer-bg-cropped.webp" }],
+	"discount": "30",
+	"headings": {
+		"women": "For Women",
+		"men": "For Men",
+		"kids": "For Kids",
+		"new": "New-Arraival",
+		"offer": "On Discount"
+	},
+	"items": {
+		"new": [
+			{
+				"image": "assets/women/OrangeTshirt.webp",
+				"description": "Bright orange t-shirt to add a pop of color to your outfit.",
+				"price": 2200,
+				"availability": true,
+				"discount": false
+			},
+			{
+				"image": "assets/men/MarroonShirt.webp",
+				"description": "Deep maroon formal shirt made with breathable fabric.",
+				"price": 3100,
+				"availability": true,
+				"discount": true
+			},
+			{
+				"image": "assets/kids/GirlsWhiteDress.avif",
+				"description": "Beautiful white dress, ideal for special occasions.",
+				"price": 3900,
+				"availability": true,
+				"discount": false
+			},
+			{
+				"image": "assets/women/PurpleSilkDress.webp",
+				"description": "Luxurious purple silk dress with a flattering silhouette.",
+				"price": 3700,
+				"availability": true,
+				"discount": true
+			},
+			{
+				"image": "assets/men/Blacktshirt.webp",
+				"description": "Classic black t-shirt for a clean, minimal style.",
+				"price": 2000,
+				"availability": false,
+				"discount": false
+			},
+			{
+				"image": "assets/women/LongCasualShirtTop.webp",
+				"description": "Long casual shirt top, ideal for a laid-back style.",
+				"price": 2300,
+				"availability": true,
+				"discount": true
+			}
+		],
+		"women": [
+			{
+				"image": "assets/women/BlackLongSleeveBlouse.webp",
+				"description": "Elegant black long sleeve blouse, perfect for casual or formal wear.",
+				"price": 2750,
+				"availability": true,
+				"discount": false
+			},
+			{
+				"image": "assets/women/PurpleSilkDress.webp",
+				"description": "Luxurious purple silk dress with a flattering silhouette.",
+				"price": 3900,
+				"availability": true,
+				"discount": true
+			},
+			{
+				"image": "assets/women/FloralPrintedLongSleeveDress.webp",
+				"description": "Floral printed dress with long sleeves for a feminine look.",
+				"price": 3400,
+				"availability": true,
+				"discount": false
+			},
+			{
+				"image": "assets/women/PurpleTshirt.webp",
+				"description": "Comfortable purple t-shirt with a soft cotton feel.",
+				"price": 2100,
+				"availability": true,
+				"discount": false
+			},
+			{
+				"image": "assets/women/LongCasualShirtTop.webp",
+				"description": "Long casual shirt top, ideal for a laid-back style.",
+				"price": 2300,
+				"availability": true,
+				"discount": true
+			},
+			{
+				"image": "assets/women/SolidPrintedCasualBlueBlouse.webp",
+				"description": "Solid printed blue blouse, versatile for any occasion.",
+				"price": 2600,
+				"availability": false,
+				"discount": false
+			},
+			{
+				"image": "assets/women/OrangeTshirt.webp",
+				"description": "Bright orange t-shirt to add a pop of color to your outfit.",
+				"price": 2000,
+				"availability": true,
+				"discount": false
+			}
+		],
+		"men": [
+			{
+				"image": "assets/men/Blacktshirt.webp",
+				"description": "Classic black t-shirt for a clean, minimal style.",
+				"price": 2200,
+				"availability": true,
+				"discount": false
+			},
+			{
+				"image": "assets/men/BrownTshirt.webp",
+				"description": "Earth-toned brown t-shirt for everyday wear.",
+				"price": 2400,
+				"availability": true,
+				"discount": false
+			},
+			{
+				"image": "assets/men/MarroonShirt.webp",
+				"description": "Deep maroon formal shirt made with breathable fabric.",
+				"price": 3600,
+				"availability": true,
+				"discount": true
+			},
+			{
+				"image": "assets/men/RoundNeckBlue.webp",
+				"description": "Blue round-neck t-shirt with soft texture.",
+				"price": 2050,
+				"availability": true,
+				"discount": false
+			},
+			{
+				"image": "assets/men/BrownBottoms.webp",
+				"description": "Comfortable brown bottoms, great for lounging or casual wear.",
+				"price": 3100,
+				"availability": false,
+				"discount": false
+			},
+			{
+				"image": "assets/men/GreenTshirt.webp",
+				"description": "Casual green t-shirt with breathable cotton.",
+				"price": 2700,
+				"availability": true,
+				"discount": true
+			},
+			{
+				"image": "assets/men/PinkShorts.webp",
+				"description": "Light pink shorts perfect for summer days.",
+				"price": 2900,
+				"availability": true,
+				"discount": false
+			}
+		],
+		"kids": [
+			{
+				"image": "assets/kids/BoysLooseGreenishTshirt.avif",
+				"description": "Loose-fitting greenish t-shirt for boys made from soft fabric.",
+				"price": 2100,
+				"availability": true,
+				"discount": false
+			},
+			{
+				"image": "assets/kids/LinenBlendSuitPants.avif",
+				"description": "Lightweight linen-blend pants perfect for kids’ formal occasions.",
+				"price": 3700,
+				"availability": false,
+				"discount": false
+			},
+			{
+				"image": "assets/kids/GirlsOversizedPrinted.avif",
+				"description": "Oversized printed top with colorful patterns for girls.",
+				"price": 2300,
+				"availability": true,
+				"discount": true
+			},
+			{
+				"image": "assets/kids/OrangeTshirt.jpg",
+				"description": "Bright orange t-shirt with a fun and playful print.",
+				"price": 2000,
+				"availability": true,
+				"discount": false
+			},
+			{
+				"image": "assets/kids/GirlsPinkDress.avif",
+				"description": "Charming pink dress with soft fabric and frills.",
+				"price": 3400,
+				"availability": true,
+				"discount": false
+			},
+			{
+				"image": "assets/kids/SmokedRuffleTrimmedDress.avif",
+				"description": "Ruffle-trimmed dress with smocking for added comfort.",
+				"price": 3850,
+				"availability": true,
+				"discount": true
+			},
+			{
+				"image": "assets/kids/GirlsWhiteDress.avif",
+				"description": "Beautiful white dress, ideal for special occasions.",
+				"price": 3900,
+				"availability": true,
+				"discount": false
+			}
+		]
+	}
 }
