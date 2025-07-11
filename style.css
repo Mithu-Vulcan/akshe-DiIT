@@ -62,7 +62,7 @@ a {
 	font-weight: 500;
 }
 
-.header-section ul li:hover {
+.header-section ul li:hover, .footer-3 .footer-body:hover {
 	color: var(--text-primary);
 	font-size: 1.1rem;
 }
@@ -79,14 +79,14 @@ a {
 	scale: 1.1;
 }
 
-.hero {
+.hero, .footer {
 	padding: 0;
 	position: relative;
 	width: 100%;
 	overflow: hidden;
 }
 
-.hero img {
+.hero img, .footer img {
 	margin: 0;
 	padding: 0;
 	width: 100%;
@@ -95,7 +95,7 @@ a {
 	z-index: 0;
 }
 
-.hero-texts {
+.hero-texts, .footer-texts {
     width: 75%;
     display: flex;
     flex-direction: column;
@@ -134,4 +134,48 @@ a {
     background-color: var(--bg-button);
     border-color: transparent;
     color: var(--text-primary);
+}
+
+.footer {
+    padding: 0;
+    margin: 0;
+}
+
+.footer-texts {
+    flex-direction: row;
+    justify-content: space-between;
+    top: 50%;
+    width: 100%;
+}
+
+.footer-1, .footer-2, .footer-3 {
+    width: calc(100%/3);
+}
+
+.footer-logo {
+    font-size: 3rem;
+    font-family: var(--font-logo);
+    color: var(--text-primary);
+}
+
+.footer-head {
+    font-size: 1.1rem;
+    color: var(--text-primary);
+    font-weight: 500;
+    margin-bottom: 1rem;
+}
+
+.footer-body {
+    color: var(--text-secondary);
+}
+
+.footer-2, .footer-3 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: right;
+}
+
+.footer-3 {
+    padding-right: calc(100%/10);
 }
