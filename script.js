@@ -1,4 +1,4 @@
-fetch("/config.json")
+fetch("config.json")
 	.then((response) => response.json())
 	.then((config) => {
 		window.siteConfig = config;
