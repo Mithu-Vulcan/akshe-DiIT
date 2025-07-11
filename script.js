@@ -17,6 +17,7 @@ class navSection extends HTMLElement {
 		}
 	}
 	render() {
+		console.log("Loading: Navbar")
 		const config = window.siteConfig;
 		if (!config || !config.navItems) return;
 
@@ -62,6 +63,7 @@ class footerSection extends HTMLElement {
 	}
 
 	render() {
+		console.log("Loading: Footer")
 		const config = window.siteConfig;
 		if (!config || !config.navItems) return;
 
